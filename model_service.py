@@ -26,12 +26,10 @@ def get_sentiment_analyzer():
     """Load Hugging Face sentiment model once."""
     global _sentiment_analyzer
     if _sentiment_analyzer is None:
-        print('Loading AI model...')
         _sentiment_analyzer = pipeline(
             'sentiment-analysis',
             model='distilbert-base-uncased-finetuned-sst-2-english',
         )
-        print('AI model ready!')
     return _sentiment_analyzer
 
 

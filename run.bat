@@ -11,4 +11,3 @@ if not exist venv\Scripts\activate (
 set FLASK_DEBUG=0
 echo Starting AI service at http://127.0.0.1:5001
 python app.py
-pause

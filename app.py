@@ -53,7 +53,4 @@ def predict_batch():
 
 
 if __name__ == '__main__':
-    print('Starting AI Review Insights Service...')
-    print('http://localhost:5001')
-    print('Endpoints: /health, /analyze, /predict, /predict/batch')
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=False)
